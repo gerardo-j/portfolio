@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
-import { makeStyles, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -33,7 +33,7 @@ function TabPanel(props) {
     </div>
   );
 }
-
+ 
 TabPanel.propTypes = {
   children: PropTypes.node,
   index: PropTypes.any.isRequired,
@@ -47,19 +47,7 @@ function a11yProps(index) {
   };
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    backgroundColor: theme.palette.background.paper,
-    position: "relative",
-    bottom: -50,
-    width: "65%",
-    margin: "1rem auto",
-    boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"
-  }
-}));
-
 export default function FullWidthTabs() {
-  const classes = useStyles();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -72,7 +60,7 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <div className={classes.root}>
+    <div className="middle-container">
       <AppBar position="static" color="transparent">
         <Tabs
           value={value}
@@ -81,8 +69,7 @@ export default function FullWidthTabs() {
           textColor="primary"
           variant="fullWidth"
           aria-label="full width tabs example"
-          centered
-        >
+          centered>
           <Tab label="Projects" {...a11yProps(1)} />
           <Tab label="Resume" {...a11yProps(2)} />
         </Tabs>
@@ -90,10 +77,9 @@ export default function FullWidthTabs() {
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
-        onChangeIndex={handleChangeIndex}
-      >
+        onChangeIndex={handleChangeIndex}>
           <ProjectGrid/>
-        {/* <TabPanel value={value} index={0} dir={theme.direction}>
+        {/* <TabPanel component="div" value={value} index={0} dir={theme.direction}>
         </TabPanel> */}
         <TabPanel value={value} index={1} dir={theme.direction}>
           <a href={ResumePDF} download="Resume">

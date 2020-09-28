@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
     padding: "2%",
     height: "100%",
     width: "100%",
-    overflow: "hidden"
+    overflow: "hidden",
+    fontWeight: "700"
   },
   paper: {
     padding: theme.spacing(2),
@@ -63,7 +64,7 @@ export default function FullWidthGrid() {
               name="Simon"
               img={Project3Preview}/>
             <ul className={classes.root}>
-              <li>Javascript</li>
+              <li >Javascript</li>
               <li>HTML</li>
               <li>CSS</li>
             </ul>

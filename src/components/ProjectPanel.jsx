@@ -29,7 +29,8 @@ export default function ProjectPanel(props) {
                 className={classes.a}
                 src={props.img}
                 alt={"Project Preview"}/>
-                <span>{props.name} <ToolTip/></span>
+                <span className="project-heading">{props.name}</span>
+                <ToolTip/>
             </a>
         </div>
     )
