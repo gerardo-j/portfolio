@@ -2,10 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import ProjectPanel from './ProjectPanel';
-import Project1Preview from '../imgs/Project-1-Preview.png';
-import Project2Preview from '../imgs/Project-2-Preview.png';
-import Project3Preview from '../imgs/Project-3-Preview.png';
+import Panel from './Panel';
+import Project1Preview from '../../imgs/Project-1-Preview.png';
+import Project2Preview from '../../imgs/Project-2-Preview.png';
+import Project3Preview from '../../imgs/Project-3-Preview.png';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -34,40 +34,26 @@ export default function FullWidthGrid() {
       <Grid container spacing={5}>
         <Grid item xs={12} sm={12} md={6} lg={4}>
           <Paper className={classes.paper}>
-            <ProjectPanel 
+            <Panel 
                   name="Note Keeper"
-                  img={Project2Preview}/>
-            <ul className={classes.root}>
-              <li>React</li>
-              <li>Mongoose (MongoDB)</li>
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
+                  img={Project2Preview}
+                  languages={["React", "Mongoose"]}
+                  live="/Notes"
+                  />
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4}>
           <Paper className={classes.paper}>
-            <ProjectPanel 
+            <Panel 
                 name="Dice Game"
                 img={Project1Preview}/>
-            <ul className={classes.root}>
-              <li>Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4}>
           <Paper className={classes.paper}>
-            <ProjectPanel 
+            <Panel 
               name="Simon"
               img={Project3Preview}/>
-            <ul className={classes.root}>
-              <li >Javascript</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
           </Paper>
         </Grid>
       </Grid>

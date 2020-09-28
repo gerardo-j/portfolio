@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProjectGrid from './ProjectGrid';
 import Footer from './Footer';
-import PDF from '../imgs/Resume.png';
-import ResumePDF from '../Resume.pdf';
+import PDF from './Resume.png';
+import ResumePDF from '../../Resume.pdf';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -84,7 +84,9 @@ export default function FullWidthTabs() {
         <TabPanel value={value} index={1} dir={theme.direction}>
           <a href={ResumePDF} download="Resume">
             <Tooltip title="Download" arrow>
-              <GetAppIcon className="icons"/>
+          
+          
+        <GetAppIcon className="icons"/>
             </Tooltip>
           </a>
           <img className="resume-img" src={PDF} alt="Resume"/>

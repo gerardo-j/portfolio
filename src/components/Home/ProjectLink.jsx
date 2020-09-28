@@ -2,17 +2,21 @@ import React from 'react';
 import Tooltip from '@material-ui/core/Tooltip';
 import WebAssetIcon from '@material-ui/icons/WebAsset';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { Link } from 'react-router-dom';
 
-export default function ArrowTooltips() {
+export default function ProjectLink(props) {
   return (
     <>
-        <Tooltip title="Live" arrow>
-            <WebAssetIcon/>       
+      <Link to={props.live}>
+        <Tooltip title="Live"  arrow>
+          <WebAssetIcon/>       
         </Tooltip>
-          
+      </Link>
+      <Link to={props.src} >
         <Tooltip title="Src </>">
-            <GitHubIcon/>
+          <GitHubIcon/>
         </Tooltip>
+      </Link>
     </>
   );
 }
