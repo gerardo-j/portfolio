@@ -1,4 +1,4 @@
-/* z */
+@import url("https://fonts.googleapis.com/css?family=McLaren|Montserrat&display=swap");
 html {
   font-family: "Montserrat", sans-serif;
 }
@@ -100,4 +100,30 @@ html {
   color: white;
   text-align: center;
   z-index: 10;
+}
+
+@media only screen and (max-width: 850px) {
+  .create-note {
+    width: 550px;
+    margin: 16px auto;
+  }
+
+  .header-container {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .note-container {
+    width: 300px;
+    margin: 24px auto;
+    float: none;
+  }
+  .create-note {
+    width: 300px;
+    margin: 16px auto;
+  }
+  .header-container {
+    text-align: center;
+  }
 }

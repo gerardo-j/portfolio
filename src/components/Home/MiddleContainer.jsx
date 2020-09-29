@@ -9,8 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import ProjectGrid from './ProjectGrid';
 import Footer from './Footer';
-import PDF from './Resume.png';
-import ResumePDF from '../../Resume.pdf';
+import ResumeIMG from './Resume.png';
+import ResumePDF from '../../Resume Public.pdf';
 import GetAppIcon from '@material-ui/icons/GetApp';
 import Tooltip from '@material-ui/core/Tooltip';
 
@@ -78,18 +78,14 @@ export default function FullWidthTabs() {
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}>
-          <ProjectGrid/>
-        {/* <TabPanel component="div" value={value} index={0} dir={theme.direction}>
-        </TabPanel> */}
-        <TabPanel value={value} index={1} dir={theme.direction}>
+        <ProjectGrid/>
+        <TabPanel value={value} index={1} dir={theme.direction} className="resume-panel">
           <a href={ResumePDF} download="Resume">
-            <Tooltip title="Download" arrow>
-          
-          
-        <GetAppIcon className="icons"/>
+            <Tooltip title="Download" arrow> 
+              <GetAppIcon className="icons"/>
             </Tooltip>
           </a>
-          <img className="resume-img" src={PDF} alt="Resume"/>
+          <img className="resume-img" src={ResumeIMG} alt="Resume"/>
         </TabPanel>
       </SwipeableViews>
       <Footer/>

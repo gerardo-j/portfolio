@@ -1,0 +1,73 @@
+.dice-app-body {
+  height: 100vh;
+  background-color: #393e46;
+  overflow: auto;
+}
+
+.dice-container {
+  color: #4ecca3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 1200px;
+  margin: auto;
+  text-align: center;
+  font-family: "Indie Flower";
+}
+
+#dice-main-heading {
+  margin: 30px;
+  font-family: "Lobster";
+  font-size: 8rem;
+  grid-column: 2 span;
+}
+
+.dice-btn {
+  grid-column: 2 span;
+  font-size: 1.2rem;
+  border: none;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  margin: 1rem auto;
+  color: #4ecca3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dice-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.player-names {
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .dice-container {
+    width: 770px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dice-container {
+    width: 600px;
+  }
+  .players {
+    grid-column: 2 span;
+  }
+  #dice-main-heading {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dice-container {
+    width: 300px;
+  }
+  .players {
+    grid-column: 2 span;
+  }
+  #dice-main-heading {
+    font-size: 4rem;
+  }
+}

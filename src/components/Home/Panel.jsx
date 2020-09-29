@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ProjectLink from './ProjectLink';
+import {Link} from 'react-router-dom'
 
 
 const useStyles = makeStyles(theme => ({
@@ -31,18 +32,21 @@ export default function ProjectPanel(props) {
     console.log(props)
     return (
         <div>
-            <a href="/" className={classes.a}>
+            <Link to={props.live} className={classes.a}>
+            {/* <a href={props.live} className={classes.a}> */}
                 <img 
                 className={classes.a}
                 src={props.img}
                 alt={"Project Preview"}/>
                 <span className="project-heading">{props.name}</span>
                 <ProjectLink live={props.live} src={props.src}/>
-            </a>
+            {/* </a> */}
+            </Link>
             <ul className={classes.list}>
                 {props.languages !== undefined ? props.languages.map((language, index) => {
                     return <li key={index}>{language}</li>
                 }) : null}
+                <li>React</li>
                 <li>Javascript</li>
                 <li>HTML</li>
                 <li>CSS</li>

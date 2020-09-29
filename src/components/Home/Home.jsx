@@ -9,7 +9,8 @@ export default function Home() {
         <Container maxWidth={false} className="main-container">
         <Grid  item xs={12}>   
             <div className="header-text-container">
-                <span className="header-text">I'm Gerardo, A programmer</span>
+                <span className="header-text">MY NAME IS GERARDO JUAREZ</span>
+                <span className="header-bio">I'm a passionate programmer, I enjoy learning new technologies to help make my life easier.</span>
             </div>
         </Grid>
         <MainContainer/>

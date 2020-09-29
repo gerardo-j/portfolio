@@ -37,7 +37,7 @@ export default function FullWidthGrid() {
             <Panel 
                   name="Note Keeper"
                   img={Project2Preview}
-                  languages={["React", "Mongoose"]}
+                  languages={["Mongoose"]}
                   live="/Notes"
                   />
           </Paper>
@@ -46,14 +46,18 @@ export default function FullWidthGrid() {
           <Paper className={classes.paper}>
             <Panel 
                 name="Dice Game"
-                img={Project1Preview}/>
+                img={Project1Preview}
+                live="/Dice"
+                />
           </Paper>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={4}>
           <Paper className={classes.paper}>
             <Panel 
               name="Simon"
-              img={Project3Preview}/>
+              img={Project3Preview}
+              live="/Simon"
+              />
           </Paper>
         </Grid>
       </Grid>
