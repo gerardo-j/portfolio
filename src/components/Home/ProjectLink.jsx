@@ -12,11 +12,11 @@ export default function ProjectLink(props) {
           <WebAssetIcon/>       
         </Tooltip>
       </Link>
-      <Link to={props.src} >
+      <a href={props.src}>
         <Tooltip title="Src </>">
           <GitHubIcon/>
         </Tooltip>
-      </Link>
+      </a>
     </>
   );
 }

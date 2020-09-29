@@ -95,7 +95,7 @@ function SimonApp() {
             default:
                 break;
         }
-        audio.play();
+        audio !== undefined ? audio.play() : console.log("No audio was set!");
     }
     
     function animatePress(currentColor) {

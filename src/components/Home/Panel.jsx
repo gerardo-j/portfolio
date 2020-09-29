@@ -33,15 +33,13 @@ export default function ProjectPanel(props) {
     return (
         <div>
             <Link to={props.live} className={classes.a}>
-            {/* <a href={props.live} className={classes.a}> */}
                 <img 
                 className={classes.a}
                 src={props.img}
                 alt={"Project Preview"}/>
                 <span className="project-heading">{props.name}</span>
-                <ProjectLink live={props.live} src={props.src}/>
-            {/* </a> */}
             </Link>
+                <ProjectLink live={props.live} src={props.src}/>
             <ul className={classes.list}>
                 {props.languages !== undefined ? props.languages.map((language, index) => {
                     return <li key={index}>{language}</li>

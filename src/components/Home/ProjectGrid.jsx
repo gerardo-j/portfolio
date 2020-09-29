@@ -37,8 +37,8 @@ export default function FullWidthGrid() {
             <Panel 
                   name="Note Keeper"
                   img={Project2Preview}
-                  languages={["Mongoose"]}
                   live="/Notes"
+                  src="https://github.com/gerardo-j/keeper-react-app"
                   />
           </Paper>
         </Grid>
@@ -48,6 +48,7 @@ export default function FullWidthGrid() {
                 name="Dice Game"
                 img={Project1Preview}
                 live="/Dice"
+                src="https://github.com/gerardo-j/dice-react-app"
                 />
           </Paper>
         </Grid>
@@ -57,6 +58,7 @@ export default function FullWidthGrid() {
               name="Simon"
               img={Project3Preview}
               live="/Simon"
+              src="https://github.com/gerardo-j/simon-react-app"
               />
           </Paper>
         </Grid>
