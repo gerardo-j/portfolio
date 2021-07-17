@@ -96,8 +96,8 @@ html {
   position: sticky;
   bottom: 0;
   width: 100%;
-  background-color: grey;
-  color: white;
+  background-color: rgb(228, 249, 245);
+  color: black;
   text-align: center;
   z-index: 10;
 }
