@@ -5,9 +5,10 @@ import DiceApp from "./Dice Game/DiceApp";
 import SimonApp from "./Simon Game/SimonApp";
 import Theme from "./MuiTheme";
 import { ThemeProvider } from "@material-ui/core";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
+  console.log("App has loaded");
   return (
     <ThemeProvider theme={Theme}>
       <Router>

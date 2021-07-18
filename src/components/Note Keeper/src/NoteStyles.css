@@ -83,15 +83,6 @@ html {
   outline: none;
 }
 
-.footer {
-  clear: both;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  color: #ccc;
-}
-
 .project-global-heading {
   position: sticky;
   bottom: 0;

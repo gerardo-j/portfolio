@@ -1,50 +1,37 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import Link from "react-router-dom/Link";
 import ProjectLink from "./ProjectLink";
-import { Link } from "react-router-dom";
+import Paper from "@material-ui/core/Paper";
+import makeStyles from "@material-ui/core/styles/makeStyles";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    color: "black",
-    fontWeight: "bold",
-    textAlign: "left",
-    marginLeft: "10%",
-    width: "100%",
-  },
   a: {
     textDecoration: "none",
     width: "100%",
     color: "black",
     fontSize: "2rem",
   },
-  list: {
-    fontSize: "1.2rem",
-    fontWeight: "700",
-    textDecoration: "none",
-    listStyle: "none",
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    height: "100%",
+    color: theme.palette.text.secondary,
+    boxShadow:
+      "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
   },
 }));
 
-export default function ProjectPanel(props) {
+const ProjectPanel = ({ live, img, name, src }) => {
   const classes = useStyles();
   return (
-    <div>
-      <Link to={props.live} className={classes.a}>
-        <img className={classes.a} src={props.img} alt={"Project Preview"} />
-        <span className="project-heading">{props.name}</span>
+    <Paper className={classes.paper}>
+      <Link to={live} className={classes.a}>
+        <img className={classes.a} src={img} alt={"Project Preview"} />
+        <h3 className="project-heading">{name}</h3>
       </Link>
-      <ProjectLink live={props.live} src={props.src} />
-      <ul className={classes.list}>
-        {props.languages !== undefined
-          ? props.languages.map((language, index) => {
-              return <li key={index}>{language}</li>;
-            })
-          : null}
-        <li>React</li>
-        <li>Javascript</li>
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
-    </div>
+      <ProjectLink live={live} src={src} />
+    </Paper>
   );
-}
+};
+
+export default ProjectPanel;

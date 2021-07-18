@@ -8,12 +8,12 @@ export default function Footer() {
     <div className="footer">
       <Tooltip title="LinkedIn" arrow>
         <a href="https://www.linkedin.com/in/gerardo-juarez-cs/">
-          <LinkedInIcon className="icons" />
+          <LinkedInIcon fontSize="large" className="icons" />
         </a>
       </Tooltip>
       <Tooltip title="GitHub" arrow>
         <a href="https://github.com/gerardo-j">
-          <GitHubIcon className="icons" />
+          <GitHubIcon fontSize="large" className="icons" />
         </a>
       </Tooltip>
     </div>
