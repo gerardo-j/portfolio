@@ -5,19 +5,19 @@ import DiceApp from "./Dice Game/DiceApp";
 import SimonApp from "./Simon Game/SimonApp";
 import Theme from "./MuiTheme";
 import { ThemeProvider } from "@material-ui/core";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   console.log("App has loaded");
   return (
     <ThemeProvider theme={Theme}>
       <Router>
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/Notes" exact component={NotesApp} />
-          <Route path="/Dice" exact component={DiceApp} />
-          <Route path="/Simon" exact component={SimonApp} />
-        </Switch>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/Notes" exact element={<NotesApp />} />
+          <Route path="/Dice" exact element={<DiceApp />} />
+          <Route path="/Simon" exact element={<SimonApp />} />
+        </Routes>
       </Router>
     </ThemeProvider>
   );
