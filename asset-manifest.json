@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.2ec9ef80.css",
-    "main.js": "/static/js/main.1b82da95.js",
-    "static/media/Resume.jpg": "/static/media/Resume.df006d7d1d93b168023f.jpg",
-    "static/media/Project-2-Preview.png": "/static/media/Project-2-Preview.a4bc2ae8def911fb4f5b.png",
-    "static/media/Project-1-Preview.png": "/static/media/Project-1-Preview.f8f0f78aa3872a448bd1.png",
-    "static/media/Resume.pdf": "/static/media/Resume.e1bbcaba57280a06aca7.pdf",
-    "static/media/Project-3-Preview.png": "/static/media/Project-3-Preview.9b71afd8bc2ffaac7327.png",
-    "static/media/green.mp3": "/static/media/green.bb7cfbf2f804efc7cc38.mp3",
-    "static/media/red.mp3": "/static/media/red.cda1b21ae7cfb8bc5f8b.mp3",
-    "static/media/yellow.mp3": "/static/media/yellow.ea398e3ee263b328f564.mp3",
-    "static/media/wrong.mp3": "/static/media/wrong.09270cc34fb672dfee40.mp3",
-    "static/media/blue.mp3": "/static/media/blue.0407f8865464d427dc9a.mp3",
-    "index.html": "/index.html",
-    "main.2ec9ef80.css.map": "/static/css/main.2ec9ef80.css.map",
-    "main.1b82da95.js.map": "/static/js/main.1b82da95.js.map"
+    "main.css": "/portfolio/static/css/main.2ec9ef80.css",
+    "main.js": "/portfolio/static/js/main.682a8ed6.js",
+    "static/media/Resume.jpg": "/portfolio/static/media/Resume.df006d7d1d93b168023f.jpg",
+    "static/media/Project-2-Preview.png": "/portfolio/static/media/Project-2-Preview.a4bc2ae8def911fb4f5b.png",
+    "static/media/Project-1-Preview.png": "/portfolio/static/media/Project-1-Preview.f8f0f78aa3872a448bd1.png",
+    "static/media/Resume.pdf": "/portfolio/static/media/Resume.e1bbcaba57280a06aca7.pdf",
+    "static/media/Project-3-Preview.png": "/portfolio/static/media/Project-3-Preview.9b71afd8bc2ffaac7327.png",
+    "static/media/green.mp3": "/portfolio/static/media/green.bb7cfbf2f804efc7cc38.mp3",
+    "static/media/red.mp3": "/portfolio/static/media/red.cda1b21ae7cfb8bc5f8b.mp3",
+    "static/media/yellow.mp3": "/portfolio/static/media/yellow.ea398e3ee263b328f564.mp3",
+    "static/media/wrong.mp3": "/portfolio/static/media/wrong.09270cc34fb672dfee40.mp3",
+    "static/media/blue.mp3": "/portfolio/static/media/blue.0407f8865464d427dc9a.mp3",
+    "index.html": "/portfolio/index.html",
+    "main.2ec9ef80.css.map": "/portfolio/static/css/main.2ec9ef80.css.map",
+    "main.682a8ed6.js.map": "/portfolio/static/js/main.682a8ed6.js.map"
   },
   "entrypoints": [
     "static/css/main.2ec9ef80.css",
-    "static/js/main.1b82da95.js"
+    "static/js/main.682a8ed6.js"
   ]
 }
